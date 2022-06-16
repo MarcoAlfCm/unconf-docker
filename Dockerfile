@@ -25,8 +25,7 @@ RUN apk del curl && \
 EXPOSE 8080
 
 COPY startup.sh /opt/startup.sh
-COPY previsionUAQ.war /opt/tomcat/webapps
-COPY sistemaEvaluacion.war /opt/tomcat/webapps
+COPY examenesDRH.war /opt/tomcat/webapps
 ENTRYPOINT /opt/startup.sh
 
 WORKDIR $CATALINA_HOME
